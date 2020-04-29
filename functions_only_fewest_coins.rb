@@ -10,7 +10,6 @@ require 'pry'
 
 def fewestCoins(coins)
     coins_array = coins.split(//)
-    # unique_coins = coins.split(//).uniq
     build_arrays = make_all_subarrays(coins_array, coins)
     smallest_observed = build_arrays.min_by {|k,v| v}
     smallest_observed[1]
@@ -18,12 +17,13 @@ end
 
 def make_all_subarrays(coins_array, coins)
   smallest_count = coins_array.uniq.length
+  all_coins = coins.split(//)
   build_arrays = {}
 
   while coins_array.length > 0 && coins_array.length >=smallest_count
     # due to alteration of both coins_array and unique_coins in def make_substring,
-    # passing coins.split(//).uniq provides a static value not altered by either function
-    build_array = make_substring(coins_array, coins.split(//).uniq)
+    # passing all_coins.uniq provides a static value not altered by either function
+    build_array = make_substring(coins_array, all_coins.uniq)
     if build_array
       build_arrays[build_array.join] = build_array.length
     end
@@ -60,19 +60,19 @@ end
 
 
 
-coins1 = 'asdfkjeghfalawefhaef'
+# coins1 = 'asdfkjeghfalawefhaef'
 # # 'sdfkjeghfalaw'
 # # 'sdfkjeghfalaw'
 #
-coins2 = 'bab'
+# coins2 = 'bab'
 # # 'ba'
 # # 'ab'
 #
-coins3 = 'aaabbbcccaabbb'
+# coins3 = 'aaabbbcccaabbb'
 # # 'abbbc' => 5
 # # 'bccca' => 5
 # # 'caab' = > 4
 #
-p fewestCoins(coins1)
-p fewestCoins(coins2)
-p fewestCoins(coins3)
+# p fewestCoins(coins1)
+# p fewestCoins(coins2)
+# p fewestCoins(coins3)
