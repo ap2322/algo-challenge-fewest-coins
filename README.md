@@ -2,20 +2,26 @@
 Given a string of characters, where each character represents a coin, find the length of the shortest substring that includes all of the distinct characters in the full string.
 
 ### Example 1:
-`coins1 = 'aba'`
-Expect `fewestCoins(coins1)` to equal `2`. 
-Substrings containing all unique coins: `ab` and `ba`
-Shortest length: `2`
+```
+coins1 = 'aba'
+```
+- Expect `fewestCoins(coins1)` to equal 2
+- Substrings containing all unique coins: `ab` and `ba`
+- Shortest length: 2
+
 
 ### Example 2:
-`coins2 = 'aaabbbcccaabbb'`
-Expect `fewestCoins(coins2)` to equal `4`
-Substrings containing all unique coins:
+```
+coins2 = 'aaabbbcccaabbb'
+```
+- Expect `fewestCoins(coins2)` to equal 4
+- Substrings containing all unique coins:
 ```
 'abbbc' => 5
 'bccca' => 5
 'caab' = > 4
 ```
+- Shortest length: 4
 
 ## Using this repository
 
