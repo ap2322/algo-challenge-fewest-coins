@@ -1,11 +1,8 @@
-require 'pry'
 # go through array and push to build_array if unique character hasn't been added yet
 # if it's a unique character that is at position 0 of build array, shift the build_array and add replcement
 # keep adding characters until all unique characters are accounted for => ends build
 # determine length, check against minimum length reset min if shorter
-
 # start with next unique letter
-
 # build array not valid if not all unique letters are in it. Also stop building arrays as soon as incomplete build array is found.
 
 def fewestCoins(coins)
@@ -57,22 +54,3 @@ def make_substring(coins_array, unique_coins)
     return build_array
   end
 end
-
-
-
-# coins1 = 'asdfkjeghfalawefhaef'
-# # 'sdfkjeghfalaw'
-# # 'sdfkjeghfalaw'
-#
-# coins2 = 'bab'
-# # 'ba'
-# # 'ab'
-#
-# coins3 = 'aaabbbcccaabbb'
-# # 'abbbc' => 5
-# # 'bccca' => 5
-# # 'caab' = > 4
-#
-# p fewestCoins(coins1)
-# p fewestCoins(coins2)
-# p fewestCoins(coins3)
