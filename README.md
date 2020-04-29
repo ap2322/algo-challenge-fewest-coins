@@ -26,9 +26,9 @@ Substrings containing all unique coins:
 Modify tests or files as desired. To dig into the code, insert `binding.pry` to stop the file execution of `ruby fewest_coins.rb` or `ruby functions_only_fewest_coins.rb`. 
 
 ## Technology Used
-(Ruby)[https://ruby-doc.org/] v2.4.1
-(Minitest)[https://github.com/seattlerb/minitest] v5.14.0
-(Pry)[https://github.com/pry/pry] v0.13.1
+- [Ruby](https://ruby-doc.org/) v2.4.1
+- [Minitest](https://github.com/seattlerb/minitest) v5.14.0
+- [Pry](https://github.com/pry/pry) v0.13.1
 
 
 ## Solution
