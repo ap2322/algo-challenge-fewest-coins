@@ -4,7 +4,6 @@ require './functions_only_fewest_coins.rb'
 class FunctionsTest < Minitest::Test
 
   def test_it_makes_subarray_with_all_unique_characters
-    # collection = Coins.new('aba')
     substring_array = make_substring(['a', 'b', 'a'], ['a', 'b'])
 
     assert_equal(['a', 'b'], substring_array)
